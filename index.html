@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Stopwatch & Timer</title>
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Stopwatch & Timer</h1>
+    <!-- tabs -->
+    <ul class="tabs">
+      <li class="tab active" >
+        <button onclick="tab(event,'stopwatch')">Stopwatch</button>
+      </li>
+      <li class="tab">
+        <button onclick="tab(event,'timer')">Timer</button>
+      </li>
+    </ul>
+  <!-- stopwatch -->
+    <div class="content active " id="stopwatch" >
+        <h1 class = "title">Stopwatch</h1>
+        <p id = "output" class ="text-center"></p>
+        <div id = "controls" class = "text-center">
+          <button id = "start" >START</button>
+          <button id ="reset" >RESET</button>
+        </div>      
+    </div>
+    <!-- timer -->
+    <div class="content" id="timer" >
+        <h1 >Timer</h1>
+        <p id="outputTimer">00:00</p>
+        <input  type="text"  id="time" value="" id="time" placeholder="  Enter the time">
+        <button  id ="timers" >Start</button>
+      
+    </div>
+  
+  </div>
+</body>
+
+<script src="main.js"></script>
+</html>
